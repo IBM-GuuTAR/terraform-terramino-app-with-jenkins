@@ -5,7 +5,10 @@ pipeline {
         stage('Install Package') {
             steps {
                 git "https://github.com/IBM-GuuTAR/terraform-terramino-app-with-jenkins"
-                sh './php-init.sh'
+                sh '''
+                chmod +x ./php-init.sh
+                ./php-init.sh
+                '''
             }
         }
     }
