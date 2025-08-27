@@ -1,7 +1,6 @@
 #!/bin/bash
 # Set your desired port here
 APACHE_PORT=5000
-
 # Update packages
 apt update -y
 apt upgrade -y
